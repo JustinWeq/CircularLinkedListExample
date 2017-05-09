@@ -37,25 +37,24 @@ public:
 	//adds the passed in item to the list
 	//data- the item to add
 	void addItem(T data)
-	//void addItem(T data)
-	//{
-	//	Node* newNode = new Node(data);
+	{
+		Node* newNode = new Node(data);
 
-	//	if (m_currentNode == NULL)
-	//	{
-	//		m_currentNode = newNode;
-	//		newNode->nextNode = newNode;
-	//	}
-	//	else
-	//	{
-	//		newNode->nextNode = m_currentNode->nextNode;
-	//		m_currentNode->nextNode = newNode;
-	//		m_currentNode = newNode;
-	//	}
+		if (m_currentNode == NULL)
+		{
+			m_currentNode = newNode;
+			newNode->nextNode = newNode;
+		}
+		else
+		{
+			newNode->nextNode = m_currentNode->nextNode;
+			m_currentNode->nextNode = newNode;
+			m_currentNode = newNode;
+		}
 
-	//	size++;
-	//		
-	//}
+		size++;
+			
+	}
 
 	//returns the current item in the list
 	T getCurrentItem()
