@@ -5,4 +5,4 @@
 !.gitignore
 
 #white list everthing in the source files
-!CircularLinkedListExample/*
+!CircularLinkedListExample/
