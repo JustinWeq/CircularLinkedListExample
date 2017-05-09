@@ -1,0 +1,8 @@
+#blacklist everthing in the subdirectory
+/*
+
+#whitelist the git ignore file
+!.gitignore
+
+#white list everthing in the source files
+!CircularLinkedListExample/*
